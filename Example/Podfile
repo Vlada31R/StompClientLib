@@ -10,3 +10,7 @@ target 'StompClientLib_Example' do
     
   end
 end
+target 'StompClientLib_Example_tvOS' do
+  pod 'StompClientLib', :path => '../'
+
+end

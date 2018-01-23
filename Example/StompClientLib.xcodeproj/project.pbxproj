@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		13DD9F26E894B03D94C0ED0A /* Pods_StompClientLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836A1D99FAAA7EAAA4E7AB40 /* Pods_StompClientLib_Tests.framework */; };
+		14973E32C9DFD47586176768 /* Pods_StompClientLib_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7495499323C59A0B375D412 /* Pods_StompClientLib_Example_tvOS.framework */; };
+		14E8F89DD04689AF26B4966A /* Pods_StompClientLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3686CC7F4888ECF9C8C987 /* Pods_StompClientLib_Example.framework */; };
+		33DF7F9D20174A8700C001F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7F9C20174A8700C001F4 /* AppDelegate.swift */; };
+		33DF7F9F20174A8700C001F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7F9E20174A8700C001F4 /* ViewController.swift */; };
+		33DF7FA220174A8700C001F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DF7FA020174A8700C001F4 /* Main.storyboard */; };
+		33DF7FA420174A8700C001F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DF7FA320174A8700C001F4 /* Assets.xcassets */; };
+		33DF7FAF20174A8700C001F4 /* StompClientLib_Example_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7FAE20174A8700C001F4 /* StompClientLib_Example_tvOSTests.swift */; };
+		33DF7FBA20174A8700C001F4 /* StompClientLib_Example_tvOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7FB920174A8700C001F4 /* StompClientLib_Example_tvOSUITests.swift */; };
+		33DF7FC520174A9100C001F4 /* StompClientLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DA9EC1F444DCD009EC4FC /* StompClientLib.swift */; };
 		446DA9ED1F444DCD009EC4FC /* StompClientLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DA9EC1F444DCD009EC4FC /* StompClientLib.swift */; };
 		446DA9EF1F444F04009EC4FC /* StompClientLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446DA9EE1F444F04009EC4FC /* StompClientLib.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -19,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		33DF7FAB20174A8700C001F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33DF7F9920174A8700C001F4;
+			remoteInfo = StompClientLib_Example_tvOS;
+		};
+		33DF7FB620174A8700C001F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33DF7F9920174A8700C001F4;
+			remoteInfo = StompClientLib_Example_tvOS;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -31,7 +54,20 @@
 /* Begin PBXFileReference section */
 		17511BDB80AACD58C89ABB0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1BC917E1B315D79031CDC2DB /* StompClientLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StompClientLib.podspec; path = ../StompClientLib.podspec; sourceTree = "<group>"; };
+		22E5CEBAB916A9EA73033B3A /* Pods-StompClientLib_Example_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompClientLib_Example_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StompClientLib_Example_tvOS/Pods-StompClientLib_Example_tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		27454EB1776A5ED6CA9B7128 /* Pods-StompClientLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompClientLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StompClientLib_Example/Pods-StompClientLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		33DF7F9A20174A8700C001F4 /* StompClientLib_Example_tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StompClientLib_Example_tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DF7F9C20174A8700C001F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33DF7F9E20174A8700C001F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33DF7FA120174A8700C001F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33DF7FA320174A8700C001F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33DF7FA520174A8700C001F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DF7FAA20174A8700C001F4 /* StompClientLib_Example_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StompClientLib_Example_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DF7FAE20174A8700C001F4 /* StompClientLib_Example_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StompClientLib_Example_tvOSTests.swift; sourceTree = "<group>"; };
+		33DF7FB020174A8700C001F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DF7FB520174A8700C001F4 /* StompClientLib_Example_tvOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StompClientLib_Example_tvOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DF7FB920174A8700C001F4 /* StompClientLib_Example_tvOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StompClientLib_Example_tvOSUITests.swift; sourceTree = "<group>"; };
+		33DF7FBB20174A8700C001F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4064E4062B7FB9DEAEA709A8 /* Pods-StompClientLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompClientLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StompClientLib_Tests/Pods-StompClientLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		41A3409A414E4B711109EE5B /* Pods-StompClientLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompClientLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StompClientLib_Example/Pods-StompClientLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		446DA9EC1F444DCD009EC4FC /* StompClientLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StompClientLib.swift; sourceTree = "<group>"; };
@@ -39,6 +75,7 @@
 		4479918D1F10E43100E88D98 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = "../../../Library/Developer/Xcode/DerivedData/StompClientLib-eitoinuarubmzvfeqrotoekszmqp/Build/Products/Debug-iphoneos/SocketRocket/SocketRocket.framework"; sourceTree = "<group>"; };
 		4479918F1F10E43600E88D98 /* StompClientLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StompClientLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/StompClientLib-eitoinuarubmzvfeqrotoekszmqp/Build/Products/Debug-iphoneos/StompClientLib/StompClientLib.framework"; sourceTree = "<group>"; };
 		44F6EFA61F4448E200C44002 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = "Pods/../build/Debug-iphoneos/SocketRocket/SocketRocket.framework"; sourceTree = "<group>"; };
+		51384574DBC1A339EE931828 /* Pods-StompClientLib_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompClientLib_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StompClientLib_Example_tvOS/Pods-StompClientLib_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5D3686CC7F4888ECF9C8C987 /* Pods_StompClientLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StompClientLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* StompClientLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StompClientLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,15 +89,39 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		836A1D99FAAA7EAAA4E7AB40 /* Pods_StompClientLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StompClientLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A05036C3F47FC6F886D001 /* Pods-StompClientLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompClientLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StompClientLib_Tests/Pods-StompClientLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A7495499323C59A0B375D412 /* Pods_StompClientLib_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StompClientLib_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDE014C0409584D20FFFAE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33DF7F9720174A8700C001F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14973E32C9DFD47586176768 /* Pods_StompClientLib_Example_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DF7FA720174A8700C001F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DF7FB220174A8700C001F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				446DA9EF1F444F04009EC4FC /* StompClientLib.framework in Frameworks */,
+				14E8F89DD04689AF26B4966A /* Pods_StompClientLib_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +145,39 @@
 				4479918D1F10E43100E88D98 /* SocketRocket.framework */,
 				5D3686CC7F4888ECF9C8C987 /* Pods_StompClientLib_Example.framework */,
 				836A1D99FAAA7EAAA4E7AB40 /* Pods_StompClientLib_Tests.framework */,
+				A7495499323C59A0B375D412 /* Pods_StompClientLib_Example_tvOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33DF7F9B20174A8700C001F4 /* StompClientLib_Example_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				33DF7F9C20174A8700C001F4 /* AppDelegate.swift */,
+				33DF7F9E20174A8700C001F4 /* ViewController.swift */,
+				33DF7FA020174A8700C001F4 /* Main.storyboard */,
+				33DF7FA320174A8700C001F4 /* Assets.xcassets */,
+				33DF7FA520174A8700C001F4 /* Info.plist */,
+			);
+			path = StompClientLib_Example_tvOS;
+			sourceTree = "<group>";
+		};
+		33DF7FAD20174A8700C001F4 /* StompClientLib_Example_tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				33DF7FAE20174A8700C001F4 /* StompClientLib_Example_tvOSTests.swift */,
+				33DF7FB020174A8700C001F4 /* Info.plist */,
+			);
+			path = StompClientLib_Example_tvOSTests;
+			sourceTree = "<group>";
+		};
+		33DF7FB820174A8700C001F4 /* StompClientLib_Example_tvOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33DF7FB920174A8700C001F4 /* StompClientLib_Example_tvOSUITests.swift */,
+				33DF7FBB20174A8700C001F4 /* Info.plist */,
+			);
+			path = StompClientLib_Example_tvOSUITests;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -95,6 +187,9 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for StompClientLib */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				33DF7F9B20174A8700C001F4 /* StompClientLib_Example_tvOS */,
+				33DF7FAD20174A8700C001F4 /* StompClientLib_Example_tvOSTests */,
+				33DF7FB820174A8700C001F4 /* StompClientLib_Example_tvOSUITests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				D61D2F4D5D3B8030BDC8C965 /* Pods */,
 				06CB5C7FD3A9713BB9EFD310 /* Frameworks */,
@@ -106,6 +201,9 @@
 			children = (
 				607FACD01AFB9204008FA782 /* StompClientLib_Example.app */,
 				607FACE51AFB9204008FA782 /* StompClientLib_Tests.xctest */,
+				33DF7F9A20174A8700C001F4 /* StompClientLib_Example_tvOS.app */,
+				33DF7FAA20174A8700C001F4 /* StompClientLib_Example_tvOSTests.xctest */,
+				33DF7FB520174A8700C001F4 /* StompClientLib_Example_tvOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +264,8 @@
 				27454EB1776A5ED6CA9B7128 /* Pods-StompClientLib_Example.release.xcconfig */,
 				4064E4062B7FB9DEAEA709A8 /* Pods-StompClientLib_Tests.debug.xcconfig */,
 				84A05036C3F47FC6F886D001 /* Pods-StompClientLib_Tests.release.xcconfig */,
+				51384574DBC1A339EE931828 /* Pods-StompClientLib_Example_tvOS.debug.xcconfig */,
+				22E5CEBAB916A9EA73033B3A /* Pods-StompClientLib_Example_tvOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -173,6 +273,62 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		33DF7F9920174A8700C001F4 /* StompClientLib_Example_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33DF7FC220174A8700C001F4 /* Build configuration list for PBXNativeTarget "StompClientLib_Example_tvOS" */;
+			buildPhases = (
+				2F27691D1E5FF8BC27E784D2 /* [CP] Check Pods Manifest.lock */,
+				33DF7F9620174A8700C001F4 /* Sources */,
+				33DF7F9720174A8700C001F4 /* Frameworks */,
+				33DF7F9820174A8700C001F4 /* Resources */,
+				2DD35E0562D117F5248E2BC5 /* [CP] Embed Pods Frameworks */,
+				C267B8DFDB32F08198491FE7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StompClientLib_Example_tvOS;
+			productName = StompClientLib_Example_tvOS;
+			productReference = 33DF7F9A20174A8700C001F4 /* StompClientLib_Example_tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33DF7FA920174A8700C001F4 /* StompClientLib_Example_tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33DF7FC320174A8700C001F4 /* Build configuration list for PBXNativeTarget "StompClientLib_Example_tvOSTests" */;
+			buildPhases = (
+				33DF7FA620174A8700C001F4 /* Sources */,
+				33DF7FA720174A8700C001F4 /* Frameworks */,
+				33DF7FA820174A8700C001F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33DF7FAC20174A8700C001F4 /* PBXTargetDependency */,
+			);
+			name = StompClientLib_Example_tvOSTests;
+			productName = StompClientLib_Example_tvOSTests;
+			productReference = 33DF7FAA20174A8700C001F4 /* StompClientLib_Example_tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33DF7FB420174A8700C001F4 /* StompClientLib_Example_tvOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33DF7FC420174A8700C001F4 /* Build configuration list for PBXNativeTarget "StompClientLib_Example_tvOSUITests" */;
+			buildPhases = (
+				33DF7FB120174A8700C001F4 /* Sources */,
+				33DF7FB220174A8700C001F4 /* Frameworks */,
+				33DF7FB320174A8700C001F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33DF7FB720174A8700C001F4 /* PBXTargetDependency */,
+			);
+			name = StompClientLib_Example_tvOSUITests;
+			productName = StompClientLib_Example_tvOSUITests;
+			productReference = 33DF7FB520174A8700C001F4 /* StompClientLib_Example_tvOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		607FACCF1AFB9204008FA782 /* StompClientLib_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "StompClientLib_Example" */;
@@ -220,10 +376,26 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					33DF7F9920174A8700C001F4 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = B73S7PFHM5;
+						ProvisioningStyle = Automatic;
+					};
+					33DF7FA920174A8700C001F4 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33DF7F9920174A8700C001F4;
+					};
+					33DF7FB420174A8700C001F4 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = B73S7PFHM5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33DF7F9920174A8700C001F4;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = DDFAG9WR5M;
@@ -253,11 +425,37 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* StompClientLib_Example */,
 				607FACE41AFB9204008FA782 /* StompClientLib_Tests */,
+				33DF7F9920174A8700C001F4 /* StompClientLib_Example_tvOS */,
+				33DF7FA920174A8700C001F4 /* StompClientLib_Example_tvOSTests */,
+				33DF7FB420174A8700C001F4 /* StompClientLib_Example_tvOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		33DF7F9820174A8700C001F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DF7FA420174A8700C001F4 /* Assets.xcassets in Resources */,
+				33DF7FA220174A8700C001F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DF7FA820174A8700C001F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DF7FB320174A8700C001F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,13 +482,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StompClientLib_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2B3B3D95D81DEB0F199BCC4E /* [CP] Copy Pods Resources */ = {
@@ -308,19 +509,60 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StompClientLib_Example/Pods-StompClientLib_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2DD35E0562D117F5248E2BC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StompClientLib_Example_tvOS/Pods-StompClientLib_Example_tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket-tvOS/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/StompClientLib-tvOS/StompClientLib.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StompClientLib.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StompClientLib_Example_tvOS/Pods-StompClientLib_Example_tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F27691D1E5FF8BC27E784D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StompClientLib_Example_tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4C32BE10E208EB097CAF989B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StompClientLib_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A5B50A30217EFF0D5D09382F /* [CP] Embed Pods Frameworks */ = {
@@ -329,9 +571,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StompClientLib_Example/Pods-StompClientLib_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket-iOS/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/StompClientLib-iOS/StompClientLib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StompClientLib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -344,9 +591,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StompClientLib_Tests/Pods-StompClientLib_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket-iOS/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,9 +618,50 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StompClientLib_Tests/Pods-StompClientLib_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C267B8DFDB32F08198491FE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StompClientLib_Example_tvOS/Pods-StompClientLib_Example_tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33DF7F9620174A8700C001F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DF7F9F20174A8700C001F4 /* ViewController.swift in Sources */,
+				33DF7F9D20174A8700C001F4 /* AppDelegate.swift in Sources */,
+				33DF7FC520174A9100C001F4 /* StompClientLib.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DF7FA620174A8700C001F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DF7FAF20174A8700C001F4 /* StompClientLib_Example_tvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DF7FB120174A8700C001F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DF7FBA20174A8700C001F4 /* StompClientLib_Example_tvOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +683,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		33DF7FAC20174A8700C001F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33DF7F9920174A8700C001F4 /* StompClientLib_Example_tvOS */;
+			targetProxy = 33DF7FAB20174A8700C001F4 /* PBXContainerItemProxy */;
+		};
+		33DF7FB720174A8700C001F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33DF7F9920174A8700C001F4 /* StompClientLib_Example_tvOS */;
+			targetProxy = 33DF7FB620174A8700C001F4 /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* StompClientLib_Example */;
@@ -400,6 +701,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		33DF7FA020174A8700C001F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33DF7FA120174A8700C001F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,6 +728,194 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33DF7FBC20174A8700C001F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51384574DBC1A339EE931828 /* Pods-StompClientLib_Example_tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B73S7PFHM5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StompClientLib_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ostmodern.StompClientLib-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		33DF7FBD20174A8700C001F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E5CEBAB916A9EA73033B3A /* Pods-StompClientLib_Example_tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B73S7PFHM5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StompClientLib_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ostmodern.StompClientLib-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		33DF7FBE20174A8700C001F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StompClientLib_Example_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ostmodern.StompClientLib-Example-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StompClientLib_Example_tvOS.app/StompClientLib_Example_tvOS";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		33DF7FBF20174A8700C001F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StompClientLib_Example_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ostmodern.StompClientLib-Example-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StompClientLib_Example_tvOS.app/StompClientLib_Example_tvOS";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		33DF7FC020174A8700C001F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B73S7PFHM5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StompClientLib_Example_tvOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ostmodern.StompClientLib-Example-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = StompClientLib_Example_tvOS;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		33DF7FC120174A8700C001F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B73S7PFHM5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StompClientLib_Example_tvOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ostmodern.StompClientLib-Example-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = StompClientLib_Example_tvOS;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,6 +1092,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33DF7FC220174A8700C001F4 /* Build configuration list for PBXNativeTarget "StompClientLib_Example_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DF7FBC20174A8700C001F4 /* Debug */,
+				33DF7FBD20174A8700C001F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33DF7FC320174A8700C001F4 /* Build configuration list for PBXNativeTarget "StompClientLib_Example_tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DF7FBE20174A8700C001F4 /* Debug */,
+				33DF7FBF20174A8700C001F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33DF7FC420174A8700C001F4 /* Build configuration list for PBXNativeTarget "StompClientLib_Example_tvOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DF7FC020174A8700C001F4 /* Debug */,
+				33DF7FC120174A8700C001F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "StompClientLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

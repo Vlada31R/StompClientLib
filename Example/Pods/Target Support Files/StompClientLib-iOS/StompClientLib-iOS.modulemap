@@ -1,5 +1,5 @@
 framework module StompClientLib {
-  umbrella header "StompClientLib-umbrella.h"
+  umbrella header "StompClientLib-iOS-umbrella.h"
 
   export *
   module * { export * }
