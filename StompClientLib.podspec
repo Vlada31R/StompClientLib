@@ -29,7 +29,7 @@ Simple STOMP Client library, Swift 3 compatible. STOMP Protocol let the program 
   s.social_media_url = 'https://twitter.com/freakycodercom'
 
   s.ios.deployment_target = '8.0'
-  s.tvos.deployment_target = '11.0'
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'StompClientLib/Classes/**/*'
   
