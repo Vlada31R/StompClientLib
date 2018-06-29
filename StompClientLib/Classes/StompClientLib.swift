@@ -93,16 +93,12 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
         }
     }
     
-    public func openSocketWithURLRequest(request: NSURLRequest, delegate: StompClientLibDelegate) {
+    public func openSocket(with request: NSURLRequest, delegate: StompClientLibDelegate, connectionHeaders: [String: String]? = nil) {
+        self.connectionHeaders = connectionHeaders
         self.delegate = delegate
         self.urlRequest = request
         // Opening the socket
         openSocket()
-    }
-    
-    public func openSocketWithURLRequest(request: NSURLRequest, delegate: StompClientLibDelegate, connectionHeaders: [String: String]?) {
-        self.connectionHeaders = connectionHeaders
-        openSocketWithURLRequest(request: request, delegate: delegate)
         self.connection = true
         /// Set Ping Timer
         if self.pingTimer == nil {
@@ -424,7 +420,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
         sendFrame(command: StompCommands.commandAck, header: headerToSend, body: nil)
     }
     
-    @objc public func ping() {
+    public func ping() {
         guard isConnected() else {
             print("Not connected so no ping going to be performed")
             return
@@ -448,3 +444,4 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
         sendFrame(command: StompCommands.commandDisconnect, header: headerToSend, body: nil)
     }
 }
+
