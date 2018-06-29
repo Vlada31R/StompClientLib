@@ -63,7 +63,7 @@ public protocol StompClientLibDelegate {
     func serverDidSendReceipt(client: StompClientLib!, withReceiptId receiptId: String)
     func serverDidSendError(client: StompClientLib!, withErrorMessage description: String, detailedErrorMessage message: String?)
     func serverDidSendPing()
-
+    
     func stompClientMessage(client: StompClientLib, didReceiveMessage message: String?, withHeader header: [String: String]?, withDestination destination: String)
     /**
      Receive normal unformatted data from the websocket
@@ -79,6 +79,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
     public var connection: Bool = false
     public var certificateCheckEnabled = true
     private var urlRequest: NSURLRequest?
+    private var pingTimer: Timer?
     
     public func sendJSONForDict(dict: AnyObject, toDestination destination: String) {
         do {
@@ -103,6 +104,11 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
         self.connectionHeaders = connectionHeaders
         openSocketWithURLRequest(request: request, delegate: delegate)
         self.connection = true
+        /// Set Ping Timer
+        if self.pingTimer == nil {
+            self.pingTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(ping), userInfo: nil, repeats: true)
+        }
+        
     }
     
     private func openSocket() {
@@ -115,6 +121,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
             
             socket!.delegate = self
             socket!.open()
+            
         }
     }
     
@@ -181,7 +188,8 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
     
     public func webSocket(_ webSocket: SRWebSocket!, didFailWithError error: Error!) {
         print("didFailWithError: \(error)")
-        
+        self.pingTimer?.invalidate()
+        self.pingTimer = nil
         if let delegate = delegate {
             DispatchQueue.main.async(execute: {
                 delegate.serverDidSendError(client: self, withErrorMessage: error!.localizedDescription, detailedErrorMessage: error!.localizedDescription)
@@ -191,6 +199,8 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
     
     public func webSocket(_ webSocket: SRWebSocket!, didCloseWithCode code: Int, reason: String!, wasClean: Bool) {
         print("didCloseWithCode \(code), reason: \(reason)")
+        self.pingTimer?.invalidate()
+        self.pingTimer = nil
         if let delegate = delegate {
             DispatchQueue.main.async(execute: {
                 delegate.stompClientDidDisconnect(client: self)
@@ -300,7 +310,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
                 }
             }
         } else if command.characters.count == 0 {
-            // Pong from the server
+            // Ping from the server
             socket?.send(StompCommands.commandPing)
             
             if let delegate = delegate {
@@ -365,7 +375,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
             break
         }
         
-        let headers = [StompCommands.commandHeaderDestination: destination, StompCommands.commandHeaderAck: ack, StompCommands.commandHeaderDestinationId: ""]
+        let headers = [StompCommands.commandHeaderDestination: destination, StompCommands.commandHeaderAck: ack, StompCommands.commandHeaderDestinationId: "", StompCommands.commandHeaderHeartBeat: "10"]
         
         self.sendFrame(command: StompCommands.commandSubscribe, header: headers, body: nil)
     }
@@ -414,8 +424,25 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
         sendFrame(command: StompCommands.commandAck, header: headerToSend, body: nil)
     }
     
+    @objc public func ping() {
+        guard isConnected() else {
+            print("Not connected so no ping going to be performed")
+            return
+        }
+        // Ping from the server
+        socket?.send(StompCommands.commandPing)
+        
+        if let delegate = delegate {
+            DispatchQueue.main.async(execute: {
+                delegate.serverDidSendPing()
+            })
+        }
+    }
+    
     public func disconnect() {
         connection = false
+        self.pingTimer?.invalidate()
+        self.pingTimer = nil
         var headerToSend = [String: String]()
         headerToSend[StompCommands.commandDisconnect] = String(Int(NSDate().timeIntervalSince1970))
         sendFrame(command: StompCommands.commandDisconnect, header: headerToSend, body: nil)
