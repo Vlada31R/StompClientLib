@@ -420,7 +420,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
         sendFrame(command: StompCommands.commandAck, header: headerToSend, body: nil)
     }
     
-    public func ping() {
+    @objc public func ping() {
         guard isConnected() else {
             print("Not connected so no ping going to be performed")
             return
