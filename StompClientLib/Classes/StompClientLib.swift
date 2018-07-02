@@ -93,7 +93,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
         }
     }
     
-    public func openSocket(with request: NSURLRequest, delegate: StompClientLibDelegate, connectionHeaders: [String: String]? = nil) {
+    public func openSocketConnection(with request: NSURLRequest, delegate: StompClientLibDelegate, connectionHeaders: [String: String]? = nil) {
         self.connectionHeaders = connectionHeaders
         self.delegate = delegate
         self.urlRequest = request
