@@ -197,7 +197,7 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
 
         DispatchQueue.main.async(execute: {
             if self.pingTimer == nil {
-                self.pingTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(ping), userInfo: nil, repeats: true)
+                self.pingTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.ping), userInfo: nil, repeats: true)
             }
         })
 
@@ -456,9 +456,6 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
     @objc public func ping() {
         // Ping from the server
         socket?.send(StompCommands.commandPing)
-
-        self.pingTimer?.invalidate()
-        self.pingTimer = nil
 
         if let delegate = delegate {
             DispatchQueue.main.async(execute: {
