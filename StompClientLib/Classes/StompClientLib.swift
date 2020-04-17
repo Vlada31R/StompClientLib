@@ -195,9 +195,11 @@ public class StompClientLib: NSObject, SRWebSocketDelegate {
     public func webSocketDidOpen(_ webSocket: SRWebSocket!) {
         print("WebSocket is connected")
 
-        if self.pingTimer == nil {
-            self.pingTimer = Timer(timeInterval: 10, target: self, selector: #selector(ping), userInfo: nil, repeats: true)
-        }
+        DispatchQueue.main.async(execute: {
+            if self.pingTimer == nil {
+                self.pingTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(ping), userInfo: nil, repeats: true)
+            }
+        })
 
         connect()
     }
